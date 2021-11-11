@@ -4,7 +4,7 @@ export const Container = styled.div`
     padding: 5px 10px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: var(--message);
+    background-color: var(--secondary);
 `;
 
 export const From = styled.strong`

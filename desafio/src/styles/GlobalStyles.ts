@@ -19,7 +19,7 @@ export default createGlobalStyle`
     }
 
     :root {
-        --background: #497ab3;
-        --message: #9ac0ed;
+        --primary: #497ab3;
+        --secondary: #9ac0ed;
     }
 `;

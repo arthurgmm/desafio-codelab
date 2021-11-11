@@ -4,7 +4,7 @@ import { Container, From, Content } from './styles';
 
 export interface Props {
     from: string;
-    content: string | React.ReactElement | React.ReactNode;
+    content: string;
 }
 
 const Message: React.FC<Props> = ({
