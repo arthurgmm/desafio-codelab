@@ -1,15 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    width: 100%;
+    width: 160px;
     padding: 10px;
-`;
-
-export const Input = styled.input`
-    width: 100%;
-    height: 40px;
-
-    padding: 5px;
     border: 2px solid rgb(0, 0, 0, 0.5);
-    border-radius: 5px;
+    border-radius: 10px;
 `;

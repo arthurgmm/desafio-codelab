@@ -4,16 +4,16 @@ import { Container } from './styles';
 
 import EffortRow from '../EffortRow';
 import TimeRow from '../TimeRow';
-import VottingInfo from '../VottingInfo';
+import VotingInfo from '../VotingInfo';
 
-const Votting: React.FC = () => {
+const Voting: React.FC = () => {
     return (
         <Container>
             <EffortRow />
             <TimeRow />
-            <VottingInfo />
+            <VotingInfo />
         </Container>
     )
 };
 
-export default Votting;
+export default Voting;

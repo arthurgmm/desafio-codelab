@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Container } from './styles';
 
-const VottingInfo: React.FC = () => {
+const Consolidated: React.FC = () => {
     return (
         <Container>
 
@@ -10,4 +10,4 @@ const VottingInfo: React.FC = () => {
     )
 };
 
-export default VottingInfo;
+export default Consolidated;

@@ -3,15 +3,15 @@ import React from 'react';
 import { Container } from './styles';
 
 import Card from '../Card';
-import Votting from '../Votting';
+import Voting from '../Voting';
 
-const VottingBox: React.FC = () => {
+const VotingBox: React.FC = () => {
     return (
         <Container>
             <Card />
-            <Votting />
+            <Voting />
         </Container>
     )
 };
 
-export default VottingBox;
+export default VotingBox;
