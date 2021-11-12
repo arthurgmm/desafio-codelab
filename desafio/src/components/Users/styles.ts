@@ -6,8 +6,9 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
 
-    padding: 10px 5px;
-    background-color: var(--secondary);
+    padding: 15px 10px;
+    border-radius: 10px;
+    background-color: #fff;
     
     max-height: calc(100vh - 30px);
     overflow-y: scroll;
@@ -22,6 +23,6 @@ export const Container = styled.div`
     }
 
     ::-webkit-scrollbar-track {
-        background-color: grey;
+        background-color: #fff;
     }  
 `;

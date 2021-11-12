@@ -24,7 +24,7 @@ export const UserImage = styled.div`
 `;
 
 export const Name = styled.strong`
-    font-size: 20px;
+    font-size: 17px;
 
     &.offline {
         color: grey;

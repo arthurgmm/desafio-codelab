@@ -19,6 +19,6 @@ export const Container = styled.div`
     }
 
     ::-webkit-scrollbar-track {
-        background-color: grey;
+        background-color: #fff;
     }     
 `;
