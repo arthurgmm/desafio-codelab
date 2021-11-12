@@ -7,7 +7,7 @@ export const users: { id: number, name: string, statusOnline: boolean }[] = [
     {
         "id": 1,
         "name": "User2",
-        "statusOnline": false
+        "statusOnline": true
     },
     {
         "id": 2,
