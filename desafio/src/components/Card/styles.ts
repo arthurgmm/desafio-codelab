@@ -31,6 +31,7 @@ export const FinishCard = styled.button`
     font-size: 18px;
     padding: 3px 6px;
     border-radius: 5px;
+    cursor: pointer;
 `;
 
 export const CardContent = styled.div`

@@ -27,4 +27,10 @@ export const Button = styled.button`
     color: #fff;
     font-size: 17px;
     font-weight: bold;
+    cursor: pointer;
+
+    &.finished {
+        background-color: var(--primary);
+        cursor: not-allowed;
+    }
 `;
