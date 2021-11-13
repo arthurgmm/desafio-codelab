@@ -1,11 +1,12 @@
 import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { Container, UserImage, Name } from './styles';
+import { states } from '../../reducer';
 
 type userType = {
     id: number,
-    name: string,
-    statusOnline: boolean
+    name: string
 }
 
 interface userProps {
@@ -13,10 +14,20 @@ interface userProps {
 }
 
 const User: React.FC<userProps> = ({ user }): JSX.Element => {
+    const current_user = useSelector<states, states["current_user"]>((state) => state.current_user);
+    const dispatch = useDispatch();
+
+    function handleClick(newUser:userType):void {
+        dispatch({type: 'SET_USER', payload: newUser})
+    }
+
     return (
-        <Container >
-            <UserImage className={!user.statusOnline ? 'offline' : ''}/>
-            <Name className={!user.statusOnline ? 'offline' : ''}>{user.name}</Name>
+        <Container 
+            className={current_user.id === user.id ? 'current' : ''}
+            onClick={() => handleClick(user)}
+        >
+            <UserImage />
+            <Name>{user.name}</Name>
         </Container>
     )
 };

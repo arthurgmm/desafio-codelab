@@ -1,18 +1,20 @@
 import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 
 import { Container, Input } from './styles';
+import { states } from '../../reducer';
 
 const InputBox: React.FC = () => {
     const [message, setMessage] = useState('');
-    const dispatch = useDispatch()
+    const current_user = useSelector<states, states["current_user"]>((state) => state.current_user)
+    const dispatch = useDispatch();
 
     function handleChange (e: React.FormEvent<HTMLInputElement>): void {
         setMessage((e.target as HTMLInputElement).value);
     }
 
     function submit () {
-        dispatch({type: 'NEW_MESSAGE', payload: message})
+        dispatch({type: 'NEW_MESSAGE', payload: {from: current_user.name, text: message}})
     }    
 
     return (

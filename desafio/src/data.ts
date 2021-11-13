@@ -1,17 +1,14 @@
-export const users: { id: number, name: string, statusOnline: boolean }[] = [
+export const users: { id: number, name: string }[] = [
     {
         "id": 0,
-        "name": "User1",
-        "statusOnline": true 
+        "name": "User1"
     },
     {
         "id": 1,
-        "name": "User2",
-        "statusOnline": true
+        "name": "User2"
     },
     {
         "id": 2,
-        "name": "User3",
-        "statusOnline": true 
+        "name": "User3"
     },
 ];
