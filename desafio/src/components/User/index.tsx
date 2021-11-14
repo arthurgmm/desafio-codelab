@@ -6,7 +6,9 @@ import { states } from '../../reducer';
 
 type userType = {
     id: number,
-    name: string
+    name: string,
+    effort: number,
+    time: number
 }
 
 interface userProps {
@@ -14,17 +16,17 @@ interface userProps {
 }
 
 const User: React.FC<userProps> = ({ user }): JSX.Element => {
-    const current_user = useSelector<states, states["current_user"]>((state) => state.current_user);
+    const current_id = useSelector<states, states["current_id"]>((state) => state.current_id);
     const dispatch = useDispatch();
 
-    function handleClick(newUser:userType):void {
-        dispatch({type: 'SET_USER', payload: newUser})
+    function handleClick(newID:number):void {
+        dispatch({type: 'SET_ID', payload: newID})
     }
 
     return (
         <Container 
-            className={current_user.id === user.id ? 'current' : ''}
-            onClick={() => handleClick(user)}
+            className={current_id === user.id ? 'current' : ''}
+            onClick={() => handleClick(user.id)}
         >
             <UserImage />
             <Name>{user.name}</Name>

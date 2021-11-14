@@ -19,10 +19,12 @@ export const users: { id: number, name: string, effort: number, time: number }[]
     },
 ];
 
-export const cards: { name: string, description: string, status: boolean }[] = [
+export const cards: { name: string, description: string, status: boolean, effort: number, time: number }[] = [
     {
         "name": "Recorte",
         "description": "Recorte da tela de login da aplicação",
-        "status": true
+        "status": true,
+        "effort": -1,
+        "time": -1
     },
 ];

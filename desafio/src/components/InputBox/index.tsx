@@ -6,7 +6,8 @@ import { states } from '../../reducer';
 
 const InputBox: React.FC = () => {
     const [message, setMessage] = useState('');
-    const current_user = useSelector<states, states["current_user"]>((state) => state.current_user)
+    const current_id = useSelector<states, states["current_id"]>((state) => state.current_id)
+    const users = useSelector<states, states["users"]>((state) => state.users)
     const dispatch = useDispatch();
 
     function handleChange (e: React.FormEvent<HTMLInputElement>): void {
@@ -14,7 +15,7 @@ const InputBox: React.FC = () => {
     }
 
     function submit () {
-        dispatch({type: 'NEW_MESSAGE', payload: {from: current_user.name, text: message}})
+        dispatch({type: 'NEW_MESSAGE', payload: {from: users[current_id].name, text: message}})
     }    
 
     return (

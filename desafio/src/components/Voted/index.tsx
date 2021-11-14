@@ -1,16 +1,20 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector} from 'react-redux';
 
 import { Container } from './styles';
 import { states } from '../../reducer';
 
 const Voted: React.FC = () => {
-    const already_voted = useSelector<states, states["already_voted"]>((state) => state.already_voted);
+    const users = useSelector<states, states["users"]>((state) => state.users);
 
     return (
         <Container>
             <h3>Already Voted</h3>
-            {already_voted.map(user => <p>{`${user.name} ${user.effort}/${user.time}`}</p>)}
+            {users.filter(user => user.effort !== -1 && user.time !== -1).map(user => {
+                return (
+                    <p>{`${user.name} ${user.effort}/${user.time}`}</p>
+                )                
+            })}
         </Container>
     )
 };
