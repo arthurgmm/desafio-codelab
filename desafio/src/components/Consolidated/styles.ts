@@ -9,6 +9,11 @@ export const Container = styled.div`
     padding: 10px;
     border: 2px solid rgb(0, 0, 0, 0.5);
     border-radius: 10px;
+
+    > h3 {
+        font-size: 16px;
+        font-weight: normal;
+    }
 `;
 
 export const ResultBox = styled.div`
@@ -37,5 +42,10 @@ export const Result = styled.div`
         color: #fff;
         font-size: 17px;
         font-weight: bold;
+    }
+
+    > h3 {
+        font-size: 16px;
+        font-weight: normal;
     }
 `;

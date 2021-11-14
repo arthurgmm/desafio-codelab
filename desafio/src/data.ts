@@ -1,15 +1,21 @@
-export const users: { id: number, name: string }[] = [
+export const users: { id: number, name: string, effort: number, time: number }[] = [
     {
         "id": 0,
-        "name": "User1"
+        "name": "User1",
+        "effort": -1,
+        "time": -1
     },
     {
         "id": 1,
-        "name": "User2"
+        "name": "User2",
+        "effort": -1,
+        "time": -1
     },
     {
         "id": 2,
-        "name": "User3"
+        "name": "User3",
+        "effort": -1,
+        "time": -1
     },
 ];
 

@@ -31,6 +31,6 @@ export const Button = styled.button`
 
     &.finished {
         background-color: var(--primary);
-        cursor: not-allowed;
+        pointer-events: none;
     }
 `;
