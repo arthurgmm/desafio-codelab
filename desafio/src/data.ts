@@ -17,12 +17,18 @@ export const users: { id: number, name: string, effort: number, time: number }[]
         "effort": -1,
         "time": -1
     },
+    {
+        "id": 3,
+        "name": "User4",
+        "effort": -1,
+        "time": -1
+    }
 ];
 
 export const cards: { name: string, description: string, status: boolean, effort: number, time: number }[] = [
     {
-        "name": "Recorte",
-        "description": "Recorte da tela de login da aplicação",
+        "name": "Card Name",
+        "description": "Card Description",
         "status": true,
         "effort": -1,
         "time": -1

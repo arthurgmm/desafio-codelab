@@ -25,12 +25,12 @@ const InputBox: React.FC = () => {
                 value={message}
                 onChange={handleChange}
                 onKeyDown={(e) => {
-                    if(e.key === 'Enter' && e.shiftKey === false) {
+                    if(e.key === 'Enter' && message.length > 0) {
                       e.preventDefault();
                       submit();
                       setMessage('');
                     }
-                  }}
+                }}
                 placeholder='Message' 
             />
         </Container>

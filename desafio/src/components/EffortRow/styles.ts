@@ -16,7 +16,7 @@ export const ButtonsArea = styled.div`
     flex-direction: row;
     justify-content: space-around;
 
-    margin: 10px 0 0;
+    margin: 10px 15px 0;
 `;
 
 export const Button = styled.button`
@@ -32,5 +32,9 @@ export const Button = styled.button`
     &.finished {
         background-color: var(--primary);
         pointer-events: none;
+    }
+
+    :active {
+        background-color: #81ACD3;
     }
 `;

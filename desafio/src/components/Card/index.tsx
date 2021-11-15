@@ -9,7 +9,8 @@ const Card: React.FC = () => {
     const dispatch = useDispatch();
 
     function handleClick():void {
-        dispatch({type: 'FINISH_CARD', payload: {name: card.name, description: card.description, status: false}})
+        const newCard = {...card, status: false}
+        dispatch({type: 'FINISH_CARD', payload: newCard})
     }
 
     return (
