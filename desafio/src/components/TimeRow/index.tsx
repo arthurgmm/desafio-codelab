@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { Container, Title, ButtonsArea, Button } from './styles';
+
 import { states } from '../../reducer';
 
 const TimeRow: React.FC = () => {
@@ -11,6 +12,7 @@ const TimeRow: React.FC = () => {
     const dispatch = useDispatch();
     let values: number[] = [1, 2, 3, 5, 8, 13, 21];
 
+    // Registra voto para tempo
     function handleClick(value: number) {
         let index: number
         index = users.findIndex((user => user.id === current_id))
@@ -18,6 +20,7 @@ const TimeRow: React.FC = () => {
         const newUsers = users.map(user => ({...user}))
         dispatch({type: 'SET_USERS', payload: newUsers})
 
+        // Atualiza maior tempo
         const maxTime = users.reduce(function(prev, current) {
             return (prev.time > current.time) ? prev : current
         })   

@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { useSelector} from 'react-redux';
 
 import { Container } from './styles';
+
 import { states } from '../../reducer';
 
 const Voted: React.FC = () => {

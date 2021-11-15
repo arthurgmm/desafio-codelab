@@ -17,9 +17,4 @@ export default createGlobalStyle`
 
         font-family: sans-serif;
     }
-
-    :root {
-        --primary: #e6e7e8;
-        --secondary: #9ac0ed;
-    }
 `;

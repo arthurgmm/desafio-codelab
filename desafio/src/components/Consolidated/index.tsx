@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 
 import { Container, ResultBox, Result } from './styles';
+
 import { states } from '../../reducer';
 
 const Consolidated: React.FC = () => {

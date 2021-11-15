@@ -12,5 +12,5 @@ export const Grid = styled.div`
     height: 100vh;
     padding: 15px;
 
-    background-color: var(--primary);
+    background-color: #e6e7e8;
 `;

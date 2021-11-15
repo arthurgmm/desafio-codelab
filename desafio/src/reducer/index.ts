@@ -53,19 +53,19 @@ type Action = ActionMessage |
 
 export const reducer = (state:states = INITIAL_STATE, action: Action) => {
     switch(action.type) {
-        case 'NEW_MESSAGE': {
+        case 'NEW_MESSAGE': { // Nova mensagem
             return {...state, messages: [...state.messages, action.payload]}
         }
-        case 'SET_ID': {
+        case 'SET_ID': { // Usuário atual
             return {...state, current_id: action.payload}
         }
-        case 'SET_USERS': {
+        case 'SET_USERS': { // Atualiza voto de usuários
             return {...state, users: action.payload}
         }
-        case 'FINISH_CARD': {
+        case 'FINISH_CARD': { // Finaliza card
             return {...state, current_card: action.payload}
         }
-        case 'SET_VOTE': {
+        case 'SET_VOTE': { // Atualiza voto consolidado
             return {...state, current_card: action.payload}
         }
         default:

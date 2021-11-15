@@ -30,7 +30,7 @@ export const Button = styled.button`
     cursor: pointer;
 
     &.finished {
-        background-color: var(--primary);
+        background-color: #e6e7e8;
         pointer-events: none;
     }
 

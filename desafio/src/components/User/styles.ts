@@ -25,7 +25,7 @@ export const UserImage = styled.div`
     margin-right: 5px;
 
     border-radius: 50%;
-    background-color: var(--primary);
+    background-color: #e6e7e8;
 `;
 
 export const Name = styled.strong`

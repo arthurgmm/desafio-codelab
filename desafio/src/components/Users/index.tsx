@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { Container } from './styles';
+
 import User from '../User';
 
 import { users } from '../../data';
